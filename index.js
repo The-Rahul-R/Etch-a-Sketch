@@ -36,7 +36,7 @@ function generateRandomColor() {
 }
 
 function darkenSquare(square) {
-    const currentColor = square.style.backgroundColor || 'rgb(255, 255, 255)';
+    const currentColor = square.style.backgroundColor || 'rgb(255, 255, 255)'; //or condition is used because for white cell , background color isnt actually set yet.
     const rgbValues = currentColor.match(/\d+/g);
     const newR = Math.max(rgbValues[0] - 25.5, 0);
     const newG = Math.max(rgbValues[1] - 25.5, 0);
